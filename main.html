@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <div class="topnav">
+        <a class="active" href="#">Explore</a>
+        <a href="#">Problems</a>
+        <a href="#contest">Contest</a>
+        <a href="#">Discuss</a>
+        <a href="#">Interview</a>
+        <a href="basic.html" style="float:right">User</a>
+      </div>
+      <div id="blank">
+        <p>                       </p>
+      </div>
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="pictures/game1.jpg" style="width:100%">
+      <div class="text">Biweekly Contest 233</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="pictures/game2.jpg" style="width:100%">
+      <div class="text">Biweekly Contest 170</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="pictures/game3.jpg" style="width:100%">
+      <div class="text">Biweekly Contest 278</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <div class="con">
+    <div class="img">
+        <a href="#">
+        <img src="pictures/game4.jpg" ><span></a>
+        <span ><h2>Weekly Contest 311</h2></span>
+        <span><h4 style="color: grey;">Sunday 8am GMT. 5:30</h4></span>
+    </div>
+    <div class="img">
+        <a href="#">
+        <img src="pictures/game5.jpg" ></a>
+        <span ><h2>Biweekly Contest 87</h2></span>
+        <span><h4 style="color: grey;">Sunday 8am GMT. 5:30</h4></span>
+    </div>
+  </div>
+
+  <div class="contests" id="contest">
+
+ 
+    <div class="image">
+       <a href="#">
+        <img src="pictures/game6.jpg" ><span></a>
+        <span ><h2>Weekly Contest 311</h2></span>
+        <span><h4 style="color: grey;">Ended. 8am GMT. 5:30</h4></span>
+    </div>
+    <div class="image">
+        <a href="#">
+        <img src="pictures/game7.jpg" ></a>
+        <span ><h2>Biweekly Contest 87</h2></span>
+        <span><h4 style="color: grey;">Ended 8am GMT. 5:30</h4></span>
+    </div>
+    <div class="image">
+        <a href="#">
+        <img src="pictures/game8.jpg" ><span></a>
+        <span ><h2>Weekly Contest 311</h2></span>
+        <span><h4 style="color: grey;">Ended 8am GMT. 5:30</h4></span>
+    </div>
+  </div>
+  <span ><h3>Past Contest   ||</span><span>My Contests</h3></span>
+  <table>
+    <tr>
+      <th><a href="#"> <img class="im" src="pictures/game1.jpg" ></a></th>
+      <th style="width:70%; text-align:left;"><h3>Weekly Contest 310</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+      <th><button class="input">Virtual</button></th>
+     </tr>
+    <tr >
+        <th><a href="#"><img class="im" src="pictures/game2.jpg" ></a></th>
+        <th style="width:70%; text-align:left;"><h3>Weekly Contest 200</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+        <th><button class="input">Virtual</button></th>
+    </tr>
+      <tr>
+       <th> <a href="#"><img class="im" src="pictures/game3.jpg" style="width:20%;"></a></th>
+        <th style="width:70%; text-align:left;"><h3>Weekly Contest 190</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+        <th><button class="input">Virtual</button></th>
+      </tr>
+      <tr>
+        <th><a href="#"><img class="im" src="pictures/game4.jpg" ></a></th>
+        <th style="width:70%; text-align:left;"><h3>Weekly Contest 178</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+        <th><button class="input">Virtual</button></th>
+    
+      </a></tr>
+      <tr>
+        <th><a href="#"><img class="im" src="pictures/game5.jpg" ></a></th>
+        <th style="width:70%; text-align:left;"><h3>Weekly Contest 876</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+        <th><button class="input">Virtual</button></th>
+      </tr>
+      <tr>
+        <th><a href="#"><img class="im" src="pictures/game6.jpg" ></a></th>
+        <th style="width:70%; text-align:left;"><h3>Weekly Contest 362</h3><br><h4 style="color:grey;">Sep 4 2021 5am  gmt</h4></th>
+        <th><button class="input" >Virtual</button></th>
+      </tr>
+   
+  </table>
+
+ 
+    <script>
+        let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+      
+      </body>
+      </html>
